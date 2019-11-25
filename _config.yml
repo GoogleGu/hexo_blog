@@ -90,7 +90,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cxo
+theme: Cxo
+# colorscheme: dark
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
