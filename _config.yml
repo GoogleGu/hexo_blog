@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Arthur's Blog
+subtitle: '不忘初心 方得始终'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Arthur Gu
+language: cn
 timezone: ''
 
 # URL
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -74,7 +74,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -90,12 +90,34 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus
-colorscheme: dark
+theme: clean-blog
+# colorscheme: dark
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  respository: https://github.com/GoogleGu/GoogleGu.github.io.git
+  repo: https://e.coding.net/guyx/guyx.git
   branch: master
+  message: update
+
+# katex
+## https://github.com/hexojs/hexo-renderer-markdown-it
+## https://github.com/luogu-dev/markdown-it-katex
+katex:
+  enable: true
+  copy_tex: true
+
+# mathjax
+# enables latex syntax
+mathjax:
+  enable: false
+  single_dollars: true
+  cjk_char_width: 16
+  svg: true
+  per_page: true
+
+# Auto group articles according to their file directory
+auto_dir_categorize:
+	enable: true  # options:true, false; default is true
+	force: true # options:true, false; default is false
